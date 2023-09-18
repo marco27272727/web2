@@ -4,7 +4,10 @@
 
     // este es el ejercicio a)
     function showPayments(){
-        
+
+        require_once './template/header.php';
+        require_once './template/form_pago.php';
+
         $pagos = getList();
 
         echo "<ul>";
@@ -17,6 +20,7 @@
         // echo "<pre>";
         // var_dump($pagos);
         // echo "<pre>";
+        require_once './template/footer.php';
     }
 
     function addRecord(){
